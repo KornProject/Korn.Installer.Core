@@ -5,18 +5,57 @@ VisualStudioVersion = 17.12.35506.116 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Installer.Core", "Korn.Installer.Core\Korn.Installer.Core.csproj", "{EEE14F97-4AA4-421B-B8D7-728D99370E88}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Korn", "Korn", "{9A97FC99-CAAA-4989-B6D4-606CC99B126E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Interface", "..\Korn.Interface\Korn.Interface\Korn.Interface.csproj", "{77250EE1-1147-49EC-A2DF-1FA162521293}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Shared", "..\Korn.Shared\Korn.Shared\Korn.Shared.csproj", "{5688B36B-0844-4028-8C2D-34E9757DDC21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Shared.Internal", "..\Korn.Shared.Internal\Korn.Shared.Internal\Korn.Shared.Internal.csproj", "{A0B47F61-CC74-4A4B-A088-32D44D98C35E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Logger", "..\Korn.Logger\Korn.Logger\Korn.Logger.csproj", "{6F87626D-A2AA-4599-B06C-CE02903BD1B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Korn.Utils.GithubExplorer", "..\Korn.Utils.GithubExplorer\Korn.Utils.GithubExplorer\Korn.Utils.GithubExplorer.csproj", "{E49D15F0-A1D2-4E16-8520-E7C69596E810}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EEE14F97-4AA4-421B-B8D7-728D99370E88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EEE14F97-4AA4-421B-B8D7-728D99370E88}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EEE14F97-4AA4-421B-B8D7-728D99370E88}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EEE14F97-4AA4-421B-B8D7-728D99370E88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEE14F97-4AA4-421B-B8D7-728D99370E88}.Debug|x64.ActiveCfg = Debug|x64
+		{EEE14F97-4AA4-421B-B8D7-728D99370E88}.Debug|x64.Build.0 = Debug|x64
+		{EEE14F97-4AA4-421B-B8D7-728D99370E88}.Release|x64.ActiveCfg = Release|x64
+		{EEE14F97-4AA4-421B-B8D7-728D99370E88}.Release|x64.Build.0 = Release|x64
+		{77250EE1-1147-49EC-A2DF-1FA162521293}.Debug|x64.ActiveCfg = Debug|x64
+		{77250EE1-1147-49EC-A2DF-1FA162521293}.Debug|x64.Build.0 = Debug|x64
+		{77250EE1-1147-49EC-A2DF-1FA162521293}.Release|x64.ActiveCfg = Release|x64
+		{77250EE1-1147-49EC-A2DF-1FA162521293}.Release|x64.Build.0 = Release|x64
+		{5688B36B-0844-4028-8C2D-34E9757DDC21}.Debug|x64.ActiveCfg = Debug|x64
+		{5688B36B-0844-4028-8C2D-34E9757DDC21}.Debug|x64.Build.0 = Debug|x64
+		{5688B36B-0844-4028-8C2D-34E9757DDC21}.Release|x64.ActiveCfg = Release|x64
+		{5688B36B-0844-4028-8C2D-34E9757DDC21}.Release|x64.Build.0 = Release|x64
+		{A0B47F61-CC74-4A4B-A088-32D44D98C35E}.Debug|x64.ActiveCfg = Debug|x64
+		{A0B47F61-CC74-4A4B-A088-32D44D98C35E}.Debug|x64.Build.0 = Debug|x64
+		{A0B47F61-CC74-4A4B-A088-32D44D98C35E}.Release|x64.ActiveCfg = Release|x64
+		{A0B47F61-CC74-4A4B-A088-32D44D98C35E}.Release|x64.Build.0 = Release|x64
+		{6F87626D-A2AA-4599-B06C-CE02903BD1B8}.Debug|x64.ActiveCfg = Debug|x64
+		{6F87626D-A2AA-4599-B06C-CE02903BD1B8}.Debug|x64.Build.0 = Debug|x64
+		{6F87626D-A2AA-4599-B06C-CE02903BD1B8}.Release|x64.ActiveCfg = Release|x64
+		{6F87626D-A2AA-4599-B06C-CE02903BD1B8}.Release|x64.Build.0 = Release|x64
+		{E49D15F0-A1D2-4E16-8520-E7C69596E810}.Debug|x64.ActiveCfg = Debug|x64
+		{E49D15F0-A1D2-4E16-8520-E7C69596E810}.Debug|x64.Build.0 = Debug|x64
+		{E49D15F0-A1D2-4E16-8520-E7C69596E810}.Release|x64.ActiveCfg = Release|x64
+		{E49D15F0-A1D2-4E16-8520-E7C69596E810}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{77250EE1-1147-49EC-A2DF-1FA162521293} = {9A97FC99-CAAA-4989-B6D4-606CC99B126E}
+		{5688B36B-0844-4028-8C2D-34E9757DDC21} = {9A97FC99-CAAA-4989-B6D4-606CC99B126E}
+		{A0B47F61-CC74-4A4B-A088-32D44D98C35E} = {9A97FC99-CAAA-4989-B6D4-606CC99B126E}
+		{6F87626D-A2AA-4599-B06C-CE02903BD1B8} = {9A97FC99-CAAA-4989-B6D4-606CC99B126E}
+		{E49D15F0-A1D2-4E16-8520-E7C69596E810} = {9A97FC99-CAAA-4989-B6D4-606CC99B126E}
 	EndGlobalSection
 EndGlobal
