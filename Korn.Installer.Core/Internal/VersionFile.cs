@@ -13,10 +13,13 @@ class VersionFile
     {
         if (!File.Exists(versionPath))
         {
+            // it is used inside ServiceHub, so it should not refer to the logger service
+            /*
             KornShared.Logger.WriteWarning(
                 "Korn.Installer.Core.VersionFile->GetVersion: ",
                 $"Version file not found for module \"{moduleName}\"."
             );
+            */
 
             return "0";
         }

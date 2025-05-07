@@ -1,18 +1,20 @@
-﻿class ModuleInstaller
+﻿using System.Collections.Generic;
+
+class ModuleInstaller
 {
     public ModuleInstaller(params LocalGitDirectoryInstaller[] gitInstallers) => this.gitInstallers = gitInstallers;
 
     LocalGitDirectoryInstaller[] gitInstallers;
 
-    public void Install() 
-    {
-        foreach (var installer in gitInstallers)
-            installer.Install();
-    }
+    public int Parts => gitInstallers.Length;
 
-    public void CheckUpdates()
+    public List<LocalGitDirectoryInstaller> GetOutdatedGitInstallers()
     {
+        var result = new List<LocalGitDirectoryInstaller>();
         foreach (var installer in gitInstallers)
-            installer.CheckUpdates();
+            if (installer.IsOutdated())
+                result.Add(installer);
+
+        return result;
     }
 }
